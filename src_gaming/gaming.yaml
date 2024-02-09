@@ -1,0 +1,1520 @@
+general:
+  num_workers: 8
+
+paths:
+  repo_dir: "/home/ckabundant/Documents/tts-melayu"
+  gaming_dir: "${paths.repo_dir}/data/gaming"
+  gaming_path: "${paths.gaming_dir}/dataframe/gaming_terms.csv"
+  additional_path: "${paths.gaming_dir}/vocab/additional_term.txt"
+  updated_path: "${paths.gaming_dir}/dataframe/updated_terms.csv"
+  combined_path: "${paths.gaming_dir}/dataframe/combined_gaming_terms.csv"
+  special_path: "${paths.gaming_dir}/vocab/special.txt"
+  diff_path: "${paths.gaming_dir}/dataframe/stats_diff.csv"
+  same_path: "${paths.gaming_dir}/dataframe/stats_same.csv"
+  oov_path: "${paths.gaming_dir}/dataframe/oov.csv"
+  acr_path: "${paths.gaming_dir}/dataframe/acr.csv"
+  cer_path: "${paths.gaming_dir}/dataframe/cer.csv"
+  malaya_norm_dir: "${paths.gaming_dir}/malaya_vits_n/wav"
+  malaya_unnorm_dir: "${paths.gaming_dir}/malaya_vits_un/wav"
+  gaming_gt_path: "${paths.gaming_dir}/malaya_vits_n/gaming_gt.csv"
+
+  # GPT corpus related path
+  gpt_path: "${paths.gaming_dir}/vocab/gpt.txt"
+  gpt_csv_path: "${paths.gaming_dir}/dataframe/gpt.csv"
+  gpt_no_path: "${paths.gaming_dir}/dataframe/gpt_no.csv"
+  gpt_en_path: "${paths.gaming_dir}/dataframe/gpt_en.csv"
+  gpt_en_new_path: "${paths.gaming_dir}/dataframe/gpt_en_new_.csv"
+  gpt_dir: "${paths.gaming_dir}/gpt/wav"
+  gpt_no_dir: "${paths.gaming_dir}/gpt_no/wav"
+  gpt_en_new_dir: "${paths.gaming_dir}/gpt_en_new/wav"
+  gpt_word_path: "${paths.gaming_dir}/dataframe/gpt_word.csv"
+  gpt_translated_path: "${paths.gaming_dir}/dataframe/gpt_translated.csv"
+  gpt_expand_path: "${paths.gaming_dir}/dataframe/gpt_expand.csv"
+
+  # text manifest
+  gpt_txt_path: "${paths.gaming_dir}/gpt/gpt.txt"
+  gpt_ms_txt_path: "${paths.gaming_dir}/gpt/gpt_ms.txt"
+  gpt_en_ms_txt_path: "${paths.gaming_dir}/gpt/gpt_en_ms.txt"
+  gpt_eng2ipa_ms_txt_path: "${paths.gaming_dir}/gpt/gpt_eng2ipa_ms.txt"
+  gpt_norm_phon_txt_path: "${paths.gaming_dir}/gpt/gpt_norm_phon.txt"
+
+  # YAML file path
+  gpt_yaml_path: "${paths.repo_dir}/notebooks/src_gaming/gaming_gpt.yaml"
+  inferencing_yaml_path: "${paths.repo_dir}/notebooks/src_eval/batch_inferencing.yaml"
+  eval_yaml_path: "${paths.repo_dir}/notebooks/src_gaming/model_objective_eval_phon.yaml"
+
+  # json file path
+  custom_dict_path: "${paths.repo_dir}/data/gaming/custom_dict.json"
+  translated_dict_path: "${paths.repo_dir}/data/gaming/translated_dict.json"
+  phon_dict_path: "${paths.repo_dir}/data/gaming/phon_dict.json"
+
+phon_mapping:
+  freemium: ˈfɹimiəm
+  frag: ˈfɹæk
+  metroidvania: ˈmɛtˌɹɔɪdˈvɑniə
+  gank: ˈɡæŋk
+  gimp: ˈɡɪmp
+  influencer: ˈɪnfluənsɚ
+  judder: ˈdʒʌdɚ
+  laner: ˈleɪnɚ
+  monetization: ˈmɑnəˌtəˈzeɪʃən
+  mudflation: ˈmʌdˈfleɪʃən
+  newb: ˈnub
+  noob: ˈnoʊb
+  poggers: ˈpɑɡɡɚ
+  proc: ˈpɹɑk
+  squish: ˈskwɪʃ
+  telefrag: ˈtɛli ˈfɹæk
+  transmogrification: ˈtɹænzˈmɑkˈɡɹiˈfiˈkæˌtaɪən
+  downloadable: ˈdaʊnˌloʊddəbəl
+  unlockable: ənˈlɑkkəbəl
+  unlocks: ənˈlɑks
+  gibs: ˈɡɪbz
+  git: ˈɡɪt
+
+init_mapping:
+  100%: "hundred percent"
+  any%: "any percent"
+  aaa: "triple A"
+  ai: "A eye"
+  1cc: "One C C"
+  1 up: "one up"
+  1v1: "one versus one"
+  2d graphics: "two D graphics"
+  2.5d graphics: "two point five D graphics"
+  3d graphics: "three D graphics"
+  4k resolution: "four kay resolution"
+  4x: "four times"
+  8 bit: "eight bit"
+  8k resolution: "eight kay resolution"
+  16 bit: "sixteen bit"
+  32 bit: "thirty two bit"
+  64 bit: "sixty four bit"
+  360 no scope: "three sixty no scope"
+  abandonware: "abandon wear"
+  ads: "A dee ass"
+  afk: "A F kay"
+  aggro: "ed grow"
+  animatic: "any matic"
+  aoe: "A O E"
+  ap: "A pee" # action point
+  arpg: "action R pee gee"
+  asymmetric gameplay: "A symmetric game play"
+  asynchronous gameplay: "A synchronous game play"
+  ar: "A R"
+  autoaim: "auto aim"
+  aimbot: "aim bought"
+  autorun: "auto run"
+  autosave: "auto save"
+  battler: "bat ter le"
+  b2p: "bee to pee"
+  b hopping: "bee hopping"
+  bm: "bad manners"
+  blacklist: "black list"
+  borderless fullscreen windowed: "border less full screen window"
+  bullshot: "bull shot"
+  button mashing: "button mash shing"
+  checkpoint: "check point"
+  cheesing: "cheese sing"
+  cheevo: "chee vo"
+  chiptune: "chip tune"
+  cms: "C em ass"
+  completionist: "completion nist"
+  control pt: "control point"
+  cooldown: "cool down"
+  co op: "cooperative game play"
+  corruptor: "corrupt ter"
+  cp: "C pee"
+  cpu: "C pee you"
+  cranking 90s: "cranking night tees"
+  crpg: "C R pee gee"
+  ct: "counter terrorist"
+  ctf: "capture the flag"
+  cutscene: "cut scene"
+  cybersport: "cyber sport"
+  d pad: "D pad"
+  deathmatch: "death match"
+  debuff: "D buff"
+  demake: "D make"
+  destructible: "destructable"
+  dbno: "down but not out"
+  drm: "digital right management"
+  dlc: "D el C"
+  dpm: "damage per minute"
+  dps: "D pee ass"
+  dummied out: "dum mi out"
+  duping: "dupe ping"
+  elo hell: "E low hell"
+  emulator: "E mule later"
+  esp cheats: "E ass pee cheats"
+  extra sensory perception cheats: "E ass pee cheats"
+  esports: "E sports"
+  exp: "experience point"
+  fangame: "fan game"
+  ff: "forfeit"
+  field of view: "feel of view"
+  fomo: "fold mole"
+  fov: "F O vee"
+  fps: "F pee ass"
+  fotm: "flavor of the month"
+  f2p: "F to pee"
+  ftp: "F to pee"
+  fc: "full combo"
+  foozle: "foo ze"
+  gaas: "games as a service"
+  gacha: "ga cha"
+  gameplay: "game play"
+  gamethrowing: "game throwing"
+  gating: "gay thing"
+  gddr: "gee D D R"
+  gg: "good game"
+  ggwp: "gee gee W pee"
+  glhf: "good luck have fun"
+  goty: "game of the year"
+  gpu: "gee pee you"
+  griefer: "grief fur"
+  git gud: "git good"
+  hack vs hack: "hack versus hack"
+  handheld: "hand held"
+  haptic: "hap tic"
+  headshot: "head shot"
+  hitbox: "heat box"
+  hit point: "heat point"
+  hitscan: "hit scan"
+  hopa: "hold par"
+  hp: "H pee"
+  hud: "heart"
+  hurtbox: "hurt box"
+  iframes: "i frame"
+  iap: "in app purchase"
+  indie game: "inn D game"
+  joystick: "joy stick"
+  jrpg: "jay R pee gee"
+  juggernaut: "juggle not"
+  kd ratio: "kay dee ratio"
+  kdr: "kay dee R"
+  kda: "kay dee A"
+  konami: "ko na mi"
+  koth: "king of the hill"
+  leaderboard: "leader board"
+  lfg: "looking for group"
+  lfm: "looking for more"
+  lifesteal: "life steal"
+  loadout: "load out"
+  longplay: "long play"
+  low%: "low percent"
+  lp: "lets play"
+  masocore: "may so call"
+  metastory: "meta story"
+  mmo: "em em O"
+  mmorpg: "em em O R pee gee"
+  match3 game: "match three game"
+  match 3 game: "match three game"
+  maxed out: "max out"
+  metagame: "meta game"
+  microtransaction: "micro transaction"
+  min maxing: "mean max ing"
+  miniboss: "mini boss"
+  minigame: "mini game"
+  minimap: "mini map"
+  mmr: "em em R"
+  moba: "mole bar"
+  mouselook: "mouse look"
+  mouseplay: "mouse play"
+  mp: "em pee"
+  multiplatform: "multi platform"
+  multiplayer: "multi player"
+  nades: "nad"
+  nerf: "nerve"
+  nerfing: "nerve fin"
+  ng+: "new game plus"
+  ng +: "new game plus"
+  new game +: "new game plus"
+  noclip mode: "no clip mode"
+  npc: "and pee C"
+  nt: "nice try"
+  odd ball: "oddball"
+  ohk: "O H kay"
+  on disc: "on this"
+  op: "O pee"
+  overpowered: "over power"
+  otp: "one trick pony"
+  overwatch: "over watch"
+  overworld: "over world"
+  paywall: "pay wall"
+  palette swap: "parlette swap"
+  pentakill: "penta kill"
+  permadeath: "perma death"
+  platting: "play thing"
+  playthrough: "play true"
+  playtesting: "play testing"
+  pixel: "pig sir"
+  postgame: "post game"
+  psw: "persistent state world"
+  p rank: "perfect rank"
+  pc: "pee C"
+  pt: "play year bur teaser"
+  pug: "pub"
+  pulc: "premium unlock kable content"
+  pull: "pool"
+  pve: "pee vee E"
+  pvp: "pee vee pee"
+  pwn: "pond"
+  pwned: "pond"
+  qa: "queue A"
+  qq: "queue queue"
+  qte: "quick time event"
+  qol: "quality of life"
+  quicksave: "quick save"
+  quickscoping: "quick scoping"
+  ragdoll: "rag doll"
+  ragequit: "rage quit"
+  rdm: "random death match"
+  reboot: "re boot"
+  remake: "re make"
+  remaster: "re master"
+  remorting: "re mort thing"
+  rez: "res"
+  respawn: "re spawn"
+  respecing: "re spec king"
+  respeccing: "re spec king"
+  retrogaming: "retro gaming"
+  rng: "R and gee"
+  rngesus: "R and jesus"
+  roguelike: "rogue like"
+  roguelite: "rogue light"
+  rp: "R pee"
+  rpg: "R pee gee"
+  rts: "R tea ass"
+  save scumming: "save scum ming"
+  shmup: "shoot them up"
+  shoot em up: "shoot them up"
+  shovelware: "shovel ware"
+  side scrolling video game: "side scroll ling video game"
+  simcade: "sim cade"
+  sistering: "sister ring"
+  smp: "survival multi player"
+  softlock: "soft lock"
+  soulsborne: "souls borne"
+  soulslike: "souls like"
+  spamming: "spam ming"
+  speedrun: "speed run"
+  speedrunning: "speed running"
+  ssd: "ass ass dee"
+  storytelling: "story telling"
+  subgame: "sub game"
+  superboss: "super boss"
+  teabagging: "tea bagging"
+  team deathmatch: "team death match"
+  teamkill: "team kill"
+  telegraphing: "tele graph fin"
+  theorycraft: "theory craft"
+  thumbstick: "thumb stick"
+  timed: "time"
+  touchscreen: "touch screen"
+  tp: "tea pee"
+  transmog: "trans mock"
+  transmogrification: "trans mock "
+  trickjump: "trick jump"
+  tryhard: "try hard"
+  turtling: "turtle link"
+  twinking: "twin king"
+  underpowered: "under power"
+  underworld: "under world"
+  under levelled: "under level"
+  upgrade: "up grade"
+  vac: "vee A C"
+  vaporware: "vapor wear"
+  vdm: "vehicle death match"
+  vr: "vee R"
+  vrr: "variable refresh rate"
+  waggle: "wag girl"
+  waifu: "wai fu"
+  walkthrough: "walk true"
+  wallbang: "wall bang"
+  wall bang: "wall bang"
+  wallhack: "wall hack"
+  wasd keys: "W a ass dee keys"
+  wp: "W pee"
+  xp: "experience point"
+  youtube bait: "you tube bait"
+  zerging: "ze ging"
+
+mapping:
+  100%: "hundred percent"
+  any%: "any percent"
+  aaa: "triple A"
+  act: "ed"
+  ai: "A eye"
+  1cc: "One C C"
+  1 up: "one up"
+  1v1: "one versus one"
+  2d graphics: "two dee grafik"
+  2.5d graphics: "two point five dee grafik"
+  3d graphics: "three dee grafik"
+  4k resolution: "four kay resolution"
+  4x: "four times"
+  8 bit: "eg beat"
+  8k resolution: "eg kay resolution"
+  16 bit: "sixteen beat"
+  32 bit: "thirty two beat"
+  64 bit: "sixty four beat"
+  360 no scope: "three sixty no scope"
+  abandonware: "abandon wear"
+  ace: "ehs"
+  achievement: "acheev ment"
+  achievements: "acheev ment"
+  add on: "et on"
+  adds: "ed"
+  ads: "A dee ass"
+  afk: "A F kay"
+  aggro: "eg grow"
+  aiming down sights: "aming down sight"
+  animation priority: "animation perayeority"
+  aoe: "A O E"
+  ap: "A pee" # action point
+  area: "a rea"
+  arpg: "action R pee gee"
+  asymmetric gameplay: "A symmetric game play"
+  asynchronous gameplay: "a synchronous game play"
+  ar: "A R"
+  arcade: "arked"
+  asset: "assset"
+  autoaim: "auto aim"
+  autorun: "auto run"
+  autosave: "auto save"
+  b2p: "bee to pee"
+  b hopping: "bee hopping"
+  badge: "baadge"
+  base: "basz"
+  bm: "bad manners"
+  balancing: "balansing"
+  blacklist: "black list"
+  borderless fullscreen windowed: "borderless full skrin window"
+  buff: "baff"
+  bug: "barg"
+  camping: "kamping"
+  cartridge: "kartrij"
+  casual: "kar sual"
+  character: "kar racter"
+  cheating: "cheeting"
+  cheesing: "cheese sing"
+  checkpoint: "check point"
+  cinematic: "sinematik"
+  clap: "klap"
+  clapped: "klap"
+  clapping: "klapping"
+  clicker: "klicker"
+  clicking: "klicking"
+  clipping: "klipping"
+  clock: "klock"
+  clocked: "klock"
+  clone: "klone"
+  closed: "klos"
+  clutch: "klutch"
+  cms: "C em ass"
+  combo: "kombo"
+  cooldown: "kool down"
+  co op: "cooperative came play"
+  cp: "C pee"
+  cpu: "C pee you"
+  cranking 90s: "cranking night tees"
+  console: "konsol"
+  control pt: "kontrol point"
+  corruptor: "korraptor"
+  coyote: "kaiyoti"
+  cracked: "krackk"
+  crowd control: "crow kontrol"
+  crunch: "krunch"
+  crpg: "C R pee gee"
+  ct: "counter terrorist"
+  ctf: "kapchur the flag"
+  cutscene: "cut scene"
+  cut in: "kut inn"
+  cybersport: "cyber sport"
+  d pad: "dee pad"
+  dps: "dee pee ass"
+  damage: "darmeage"
+  de: "dee"
+  debuff: "dee baff"
+  demake: "dee meck"
+  destructible: "dee struck table"
+  devolution: "dee volution"
+  dialog: "dai lock"
+  dialogue: "dai lock"
+  difficulty: "diffi culty"
+  directional pad: "dai rectional pad"
+  diverse: pelbagai
+  drm: "d gi tal right management"
+  digital rights management: "d gi tal right management"
+  dlc: "dee el C"
+  dbno: "down butt not out"
+  downloadable: "downloderber"
+  dpm: "der mage per mi nit"
+  dummied out: "dum mi out"
+  dungeon: "dan geon"
+  dynamic: "dai namic"
+  early access: "erlee akses"
+  elo hell: "E low hell"
+  emergent game play: "e megent gamme play"
+  emulator: "E muell later"
+  esp cheats: "E ass pee cheats"
+  extra sensory perception cheats: "E ass pee cheats"
+  esports: "e sports"
+  exp: "axpirience point"
+  fangame: "fen game"
+  fear of missing out: "feaar of missing out"
+  ff: "forfeit"
+  field of view: "feel of view"
+  final: "fainal"
+  fomo: "fo mo"
+  fov: "F O vee"
+  fps: "F pee ass"
+  foozle: "foo zer"
+  fotm: "flayver of the month"
+  frame buffer: "frame baffer"
+  frames: frayme
+  f2p: "F to pee"
+  ftp: "F to pee"
+  fc: "full combo"
+  gaas: "games as a service"
+  gameplay: "game play"
+  game mechanics: "game mekaniks"
+  game sense: "game sens"
+  gamer: "gammer"
+  gamers: "gammers"
+  gamethrowing: "game throwing"
+  gating: "gayting"
+  gddr: "gee dee dee R"
+  gg: "good game"
+  ggwp: "gee gee W pee"
+  gimp: "gim"
+  git gud: "kitt good"
+  glhf: "good luck have fun"
+  god: "goad"
+  goty: "came of the yer"
+  gpu: "gee pee you"
+  grind: "graind"
+  griefer: "grief fer"
+  grinding: "graiding"
+  hack vs hack: "hack versus hack"
+  handheld: "hand held"
+  hate: "head"
+  headshot: "head shot"
+  heal: "heel"
+  health: "hellh"
+  hitbox: "heat box"
+  hit point: "heat point"
+  hopa: "hold par"
+  horde: "hord"
+  hp: "H pee"
+  hud: "heart"
+  hurtbox: "hurt box"
+  identity: "i dentity"
+  iframes: "i frame"
+  iap: "inn app per chease"
+  idle: "i der"
+  in: "inn"
+  indie game: "inn dee game"
+  infinite: innfai nite
+  invasion: "invesion"
+  item: "i tem"
+  johns: "john"
+  joystick: "joy stick"
+  jrpg: "jay R pee gee"
+  judder: "jader"
+  juggernaut: "jaggernaut"
+  juggling: "jaggling"
+  jump: "jum"
+  kd ratio: "kay dee reshio"
+  kdr: "kay dee R"
+  kda: "kay dee A"
+  kill stealing: "kill stilling"
+  koth: "king of the hill"
+  launch game: "lanch game"
+  lets: "letz"
+  lfg: "looking for group"
+  lfm: "looking for more"
+  lifesteal: "life steal"
+  localization: "lokal lye zation"
+  live service games: "life service games"
+  loadout: "load out"
+  longplay: "long play"
+  loot: "luute"
+  low%: "low percent"
+  lp: "letz play"
+  match fixing: "match fising"
+  masocore: "may so call"
+  mmo: "em em O"
+  mmorpg: "em em O R pee gee"
+  macro: "makro"
+  magic: "megic"
+  main: "mein"
+  match3 game: "match three game"
+  match 3 game: "match three game"
+  maxed out: "max out"
+  metagame: "meta game"
+  micro: "mycro"
+  microtransaction: "mycro tran saction"
+  min maxing: "mean maxing"
+  minigame: "mini game"
+  mmr: "em em R"
+  moba: "mole bar"
+  monetization: "monethai zetion"
+  mouselook: "mouse look"
+  mouseplay: "mouse play"
+  motion blur: "mo shion bler"
+  mp: "em pee"
+  mud: "mat"
+  mudflation: "mat flation"
+  multiplatform: "multi platform"
+  multiplayer: "multi player"
+  multiplier: "multi pliy yer"
+  nades: "neates"
+  nerf: "nerve"
+  ng+: "new game plus"
+  ng +: "new game plus"
+  new game +: "new game plus"
+  no clip mode: "no klip mode"
+  noclip mode: "no klip mode"
+  npc: "and pee C"
+  noob: "nuoob"
+  nt: "nice try"
+  nuke: "neuk"
+  odd ball: "oddball"
+  ohk: "O H kay"
+  on disc: "on dis"
+  op: "O pee"
+  overpowered: "over power"
+  otp: "one trick pony"
+  out of bounds: "out of baund"
+  overworld: "over world"
+  pause: "paws"
+  paywall: "pay wall"
+  palette swap: "parlet swap"
+  peak: "peat"
+  pentakill: "pantakill"
+  perks: "perk"
+  pervasive game: "pervesive game"
+  physical: "fizikal"
+  physics: "fizik"
+  point of no return: "point of no re turnn"
+  postgame: "post game"
+  psw: "persistent state world"
+  platting: "play ting"
+  playthrough: "play true"
+  playtesting: "play testing"
+  pixel: "pigser"
+  pog: "pork"
+  p rank: "perfect rank"
+  pc: "pee C"
+  pt: "playable teaser"
+  pub: "parb"
+  pug: "parb"
+  pulc: "premium unlog keber content"
+  pull: "pool"
+  purchase: "per chease"
+  pve: "pee vee E"
+  pvp: "pee vee pee"
+  pwn: "pond"
+  pwned: "pond"
+  qa: "qill A"
+  qq: "qill qill"
+  qte: "quick time event"
+  qol: "quality of life"
+  quest giver: "quest ki ver"
+  quicksave: "quick save"
+  quickscoping: "quick scoping"
+  radar: "redar"
+  ragdoll: "rag doll"
+  rage: "reage"
+  ragequit: "reage quit"
+  ratio: "reshio"
+  ray tracing: "ray traysing"
+  rdm: "random death match"
+  reactivity: "re act tivity"
+  reboot: "re boot"
+  remake: "re meike"
+  remaster: "re master"
+  remorting: "re morting"
+  respawn: "re spawn"
+  respecing: "re spec king"
+  respeccing: "re spec king"
+  retrogaming: "retro gaming"
+  rez: "res"
+  rhythm game: "re them game"
+  rng: "R and gee"
+  rngesus: "R and jisus"
+  roguelike: "rog like"
+  roguelite: "rog light"
+  rp: "R pee"
+  rpg: "R pee gee"
+  rts: "R tea ass"
+  runner: "ranner"
+  save scumming: "safe scuming"
+  saved game: "save game"
+  scaling: "skeling"
+  scuffed: "scuff"
+  secret level: "secret levvel"
+  sequence breaking: "sequence breking"
+  shmup: "shoot them up"
+  shoot em up: "shoot them up"
+  shovelware: "shover wear"
+  simcade: "sim cade"
+  skins: "skin"
+  smp: "survival multi player"
+  smurf: "smurve"
+  storytelling: "story telling"
+  soulsborne: "souls borne"
+  soulslike: "souls like"
+  specialization: "special lye zation"
+  speedrun: "speed run"
+  speedrunning: "speed ranning"
+  squeaker: "sqweeker"
+  ssd: "ass ass dee"
+  status effects: "statas effecs"
+  status: "statas"
+  snip: "snight"
+  stream sniping: "streem snight ping"
+  streaming: "streeming"
+  subgame: "sub game"
+  sweat: "sweact"
+  teabagging: "tea bagging"
+  teamkill: "team kill"
+  telegraph: "telegraf"
+  theorycraft: "teaory craft"
+  thumbstick: "thum stick"
+  tick: "tik"
+  timed: "time"
+  title screen: "thaiter skrin"
+  touchscreen: "tarch skrin"
+  tower dive: "tower diive"
+  toxicity: "tosicity"
+  tp: "tea pee"
+  transmogrification: "transmogrifikaytion"
+  trickjump: "trick jum"
+  turn based: "turnne based"
+  tryhard: "try hard"
+  turtling: "turtle ling"
+  twinking: "twin king"
+  underpowered: "under power"
+  underworld: "under world"
+  under levelled: "under level"
+  unlockable: "aunlockabel"
+  unlocks: "aunlock"
+  unlock: "aunlock"
+  ultimate: "outtimat"
+  upgrade: "up grade"
+  vac: "vee A C"
+  vaporware: "vepor wear"
+  vdm: "vehicle death match"
+  vr: "vee R"
+  virtual reality: "virchuel reality"
+  vrr: "verabel refresh rate"
+  walkthrough: "walk true"
+  wallbang: "wall ban"
+  wall bang: "wall ban"
+  wall climb: "wall clam"
+  wallhack: "war hack"
+  wasd keys: "dubberliu a ass dee keys"
+  whale: "wheyel"
+  wp: "dubberliu pee"
+  xp: "axpirience point"
+  youtube bait: "you tube beit"
+
+edge_mapping:
+  DoT: "dee o tea"
+  HoT: "H o tea"
+  t-pose: "tea pos"
+  T-pose: "tea pos"
+
+gpt_mapping:
+  # Custom
+  2D: two dee
+  2.5D: two point five dee
+  3D: three dee
+  4K: four kay
+  8K: eg kay
+  audio visual: audiovisual
+  capture: kapchur
+  cheat: cheet
+  comebacks: come back
+  digital: d gi tal
+  fair: feir
+  gear: yeer
+  genre: john ra
+  geocaching: geocashing
+  idea: i dea
+  mods: mod
+  pacing: paysing
+  sci fi: sigh fie
+  scoped: scope
+  sniper: snightper
+  traverse: travers
+  v sync: vee sync
+  wasd: dubberliu a ass dee
+  whiffs: whiff
+  wow: waoh
+  x axis: ax axis
+  xbox: ax box
+  y axis: wai axis
+
+  # Translated
+  abilities: kebolehan
+  ability: kebolehan
+  abrupt: tiba tiba
+  accessibility: aksesibiliti
+  accessible: boleh diakses
+  accomplished: dicapai
+  accomplishment: pencapaian
+  accountable: bertanggungjawab
+  actions: tindakan
+  activate: aktifkan
+  active: aktif
+  adaptability: kebolehsuaian
+  adaptation: adaptasi
+  addicted: ketagihan
+  addicting: ketagihan
+  addictive: ketagihan
+  additional: tambahan
+  address: alamat
+  adjust: melaraskan
+  adjustment: pelarasan
+  admit: mengaku
+  advanced: maju
+  advancement: kemajuan
+  advantage: kelebihannya
+  aesthetic: estetik
+  affected: terjejas
+  after: selepas
+  aggressive: agresif
+  agreed: bersetuju
+  alert: amaran
+  alienate: mengasingkan diri
+  allocation: peruntukan
+  alternative: alternatif
+  amazement: kagum
+  ambush: serangan hendap
+  annoying: menjengkelkan
+  appreciated: dihargai
+  approaches: pendekatan
+  areas: kawasan
+  artbook: buku seni
+  aspect: aspek
+  atmosphere: atmosfera
+  attacks: serangan
+  attention: perhatian
+  audience: penonton
+  auto targeting: penyasaran sendiri
+  available: boleh didapati
+  avoid: elakkan
+  awareness: kesedaran
+  balanced: seimbang
+  banter: kelakar
+  battles: pertempuran
+  benefits: manfaat
+  better: lebih baik
+  between: antara
+  big: besar
+  blame: menyalahkan
+  bosses: bos
+  bounce: lantunan
+  brainstorm: sumbang saran
+  branches: cabang
+  breaches: pelanggaran
+  breaks: pecah
+  bring: bawa
+  bugs: pepijat
+  build: membina
+  builds: binaan
+  calm: tenang
+  carefully: teliti
+  cast: pelakon
+  casualties: korban
+  catchy: menarik
+  cautious: berhati hati
+  ceiling: siling
+  celebrate: raikan
+  center: pusat
+  certain: tertentu
+  chair: kerusi
+  challenges: cabaran
+  challenging: mencabar
+  chance: peluang
+  chances: peluang
+  characters: aksara
+  charm: pesona
+  chat: sembang
+  chill: sejuk
+  choices: pilihan
+  clear: jelas
+  clever: pandai
+  code: kod
+  codes: kod
+  collect: kumpulkan
+  collection: koleksi
+  collectors: pengumpul
+  combat: pertempuran
+  come: datang
+  comedic: komedik
+  comfort: keselesaan
+  communication: komunikasi
+  communities: komuniti
+  community: komuniti
+  companion: sahabat
+  compared: dibandingkan
+  compatible: serasi
+  compete: bersaing
+  competition: persaingan
+  competitiveness: daya saing
+  composition: komposisi
+  compromised: dikompromikan
+  concerns: kebimbangan
+  confident: yakin
+  confuse: mengelirukan
+  connect: sambungkan
+  connected: disambungkan
+  connection: sambungan
+  consequences: akibatnya
+  consistent: konsisten
+  context: konteks
+  continuous: berterusan
+  controlled: terkawal
+  controllers: pengawal
+  convenience: kemudahan
+  coordinate: koordinat
+  coordination: penyelarasan
+  corner: bucu
+  cosmetics: kosmetik
+  counter terrorist: pengganas balas
+  crash: kemalangan
+  create: buat
+  creation: ciptaan
+  creative: kreatif
+  creativity: kreativiti
+  criticism: kritikan
+  crowded: sesak
+  crucial: penting
+  culture: budaya
+  currency: mata wang
+  current: semasa
+  custom: adat
+  customization: penyesuaian
+  dark: gelap
+  days: hari
+  debate: perbahasan
+  debugging: penyahpepijatan
+  decide: membuat keputusan
+  decision making: membuat keputusan
+  decision: keputusan
+  decisions: keputusan
+  dedicated: khusus
+  dedication: dedikasi
+  deep: mendalam
+  deeper: lebih dalam
+  defeat: kekalahan
+  defense: pertahanan
+  define: mentakrifkan
+  degrees: darjah
+  demand: permintaan
+  depth: kedalaman
+  describe: terangkan
+  desirable: wajar
+  desk: meja
+  destroy: memusnahkan
+  destroyer: pemusnah
+  detail: terperinci
+  details: perincian
+  developers: pembangun
+  device: peranti
+  different: berbeza
+  disapproval: penolakan
+  discover: temui
+  discovery: penemuan
+  discuss: berbincang
+  discussion: perbincangan
+  discussions: perbincangan
+  distant: jauh
+  distinct: berbeza
+  distribute: mengedarkan
+  distribution: pengedaran
+  distrust: kesangsian
+  dominate: menguasai
+  doom: azab
+  dream: mimpi
+  drive: memandu
+  dynamics: dinamik
+  easy: mudah
+  economy: ekonomi
+  edge: hujung
+  edition: edisi
+  effective: berkesan
+  efficient: cekap
+  effort: usaha
+  eggs: telur
+  elements: elemens
+  eliminate: menghapuskan
+  emotional: emosi
+  encounters: pertemuan
+  encourage: galakkan
+  encouragement: galakan
+  engage: terlibat
+  engaged: terlibat
+  engagement: pertunangan
+  engaging: menarik
+  engrossing: mengasyikkan
+  enhance: meningkatkan
+  enhancements: penambahan
+  enjoy: nikmati
+  enjoyability: keseronokan
+  enjoyable: menyeronokkan
+  ensure: pastikan
+  enthusiasm: semangat
+  epic: epik
+  equipment: peralatan
+  especially: terutamanya
+  ethical: etika
+  ethics: etika
+  events: peristiwa
+  everyone: semua orang
+  evolve: berkembang
+  exceptional: luar biasa
+  exceptionally: luar biasa
+  excited: teruja
+  excitement: keseronokan
+  exciting: menarik
+  execution: pelaksanaan
+  expansions: pengembangan
+  experienced: berpengalaman
+  experiences: pengalaman
+  experiment: eksperimen
+  expert: pakar
+  exploration: penerokaan
+  explore: meneroka
+  expo: ekspo
+  expression: ungkapan
+  extraordinary: luar biasa
+  factor: faktor
+  fail: gagal
+  familiar: biasa
+  fans: peminat
+  feature: ciri
+  features: fitur
+  feeling: perasaan
+  fight: melawan
+  fighting: berjuang
+  fights: pergaduhan
+  file: fail
+  financial: kewangan
+  fire: api
+  firepower: kuasa tembakan
+  fixes: pembaikan
+  flavor: rasa
+  flexibility: fleksibiliti
+  flow: aliran
+  follow: ikuti
+  followed: diikuti
+  forward: ke hadapan
+  franchise: francais
+  franchises: francais
+  frequent: kerap
+  frequently: kerap
+  friendly: mesra
+  friends: kawan
+  friendships: persahabatan
+  frustrating: mengecewakan
+  frustration: kekecewaan
+  functionality: fungsi
+  gain: keuntungan
+  game breaking: pemecahan permainan
+  game changer: penukar permainan
+  gap: jurang
+  gathering: pengumpulan
+  generator: penjana
+  gesture based: berasaskan gerak isyarat
+  girlfriend: teman wanita
+  goal: matlamat
+  grace: rahmat
+  gradual: bertahap
+  grafik intensive: intensif grafik
+  graphical: grafik
+  greatest: terhebat
+  groups: kumpulan
+  guild: gilda
+  had: telah
+  handle: pemegang
+  handy: berguna
+  hang: gantung
+  happy: gembira
+  hardware: perkakasan
+  headset: alat dengar
+  heavy: berat
+  help: membantu
+  hero: wira
+  highlight: sorot
+  highlights: sorotan
+  history: sejarah
+  holder: pemegang
+  honor: penghormatan
+  horizontal: mendatar
+  horror: seram
+  horse: kuda
+  humiliation: penghinaan
+  icon: ikon
+  iconic: ikonik
+  identify: mengenal pasti
+  illusion: ilusi
+  imaginary: khayalan
+  imbalanced: tidak seimbang
+  immediate: segera
+  immerse: tenggelam
+  immersed: terbenam
+  immersion: perendaman
+  impact: impak
+  impactful: memberi impak
+  implement: laksana
+  important: penting
+  impression: kesan
+  impressive: mengagumkan
+  improve: memperbaiki
+  improvement: penambahbaikan
+  improvements: penambahbaikan
+  impulsivity: impulsif
+  in game: dalam permainan
+  incentive: insentif
+  increase: meningkat
+  incredible: luar biasa
+  industry: industri
+  inevitable: tidak dapat dielakkan
+  informal: tidak rasmi
+  insertion: penyisipan
+  inside: dalam
+  install: memasang
+  insurance: insurans
+  integral: kamiran
+  integration: integrasi
+  intense: tegang
+  intensity: keamatan
+  interactions: interaksi
+  interactive: interaktif
+  interesting: menarik
+  into: ke dalam
+  introduction: pengenalan
+  intuition: intuisi
+  investment: pelaburan
+  involve: melibatkan diri
+  involved: terbabit
+  irreversible: tidak dapat dipulihkan
+  issues: isu
+  its: itu
+  items: item
+  japanese: jepun
+  jaw dropping: pengosongan rahang
+  job: kerja
+  join: menyertai
+  jokes: jenaka
+  journey: perjalanan
+  jumps: lompat
+  keep: teruskan
+  kills: bunuh
+  large: besar
+  large scale: skala besar
+  lasting: berpanjangan
+  latest: terkini
+  layout: susun atur
+  lazy: malas
+  learn: belajar
+  leave: cuti
+  left: ditinggalkan
+  legacy: warisan
+  lets: mari
+  leveling: meratakan
+  levels: aras
+  lighting: pencahayaan
+  limit: had
+  limited: terhad
+  limits: had
+  loading: memuatkan
+  location: lokasi
+  locations: lokasi
+  losing: kehilangan
+  lower level: aras bawah
+  maintain: mengekalkan
+  major: utama
+  mantra: mantera
+  marketing: pemasaran
+  matches: padanan
+  maybe: mungkin
+  meaningful: bermakna
+  mechanism: mekanisme
+  medium: sederhana
+  meet: jumpa
+  memorable: tidak dapat dilupakan
+  memory: ingatan
+  merchandise: barang dagangan
+  mice: tikus
+  microtransactions: transaksi mikro
+  middle: tengah
+  mind: fikiran
+  minute: minit
+  mistakes: kesilapan
+  mobile: mudah alih
+  mobility: mobiliti
+  modern: moden
+  modes: mod
+  modify: ubah suai
+  moment: momen
+  moments: momen
+  monitor: memantau
+  morally: secara moral
+  motivation: motivasi
+  motto: moto
+  movement: pergerakan
+  moves: bergerak
+  movie: filem
+  multi user: pengguna berbilang
+  mysterious: misteri
+  narrative: naratif
+  narratives: naratif
+  next: seterusnya
+  nights: malam
+  noise: bunyi bising
+  nostalgic: nostalgia
+  now: sekarang
+  number: nombor
+  objectives: objektif
+  obstacles: halangan
+  obvious: jelas
+  official: rasmi
+  on the go: semasa dalam perjalanan
+  opportunities: peluang
+  opportunity: peluang
+  optimal: optimum
+  optimize: mengoptimumkan
+  optimized: dioptimumkan
+  option: pilihan
+  original: asal
+  outcome: hasilnya
+  outcomes: hasil
+  outdoor: luar
+  overall: keseluruhannya
+  overcome: diatasi
+  overwhelming: sangat menggembirakan
+  panic: panik
+  partnerships: perkongsian
+  parts: bahagian
+  passes: hantaran
+  path: jalan
+  peek: mengintip
+  perform: melaksanakan
+  performance: prestasi
+  personalization: peribadi
+  personalize: personaliti
+  perspective: perspektif
+  physically: secara fizikal
+  pink colored: berwarna merah jambu
+  pitch: padang
+  place: tempat
+  plan: pelan
+  planning: perancangan
+  platforms: platform
+  played: dimainkan
+  player driven: pemain didorong
+  players: pemain
+  plays: dimainkan
+  playstyle: gaya permainan
+  play style: gaya permainan
+  playstyles: gaya permainan
+  play styles: gaya permainan
+  porting: mengalih
+  positioning: penentududukan
+  possibilities: kemungkinan
+  powerful: kuat
+  powerhouse: rumah kuasa
+  practice: amalan
+  precise: tepat
+  precision: ketepatan
+  predictable: boleh diramal
+  prefer: lebih suka
+  preference: pilihan
+  presses: tekan
+  prevent: mengelakkan
+  problem solving: penyelesaian masalah
+  proceed: meneruskan
+  process: proses
+  processes: proses
+  processing: memproses
+  product: produk
+  progressions: kemajuan
+  propel: sifat
+  pumping: mengepam
+  punishment: hukuman
+  purchases: pembelian
+  purpose: tujuan
+  push: tolak
+  puzzles: teka teki
+  quests: pencarian
+  rapid: pantas
+  rare: jarang berlaku
+  reaction: reaksi
+  reactions: tindak balas
+  read: baca
+  ready: sedia
+  real world: dunia nyata
+  realism: realisme
+  reallocation: perundingan semula
+  realm: alam
+  reason: sebab
+  recommend: mengesyorkan
+  recreate: buat semula
+  reduce: mengurangkan
+  refer: rujuk
+  refine: menyempurnakan
+  reflexes: refleks
+  refreshing: menyegarkan
+  regretted: dikesali
+  relax: santai
+  relaxing: santai
+  released: dilepaskan
+  relief: pelepasan
+  reminder: peringatan
+  rendering: penerapan
+  replayable: boleh ganti
+  report: laporan
+  reports: laporan
+  reputation: reputasi
+  require: memerlukan
+  required: diperlukan
+  requires: memerlukan
+  resilience: daya tahan
+  resolve: lerai
+  resource: sumber
+  respected: dihormati
+  response: tindak balas
+  responsibility: tanggungjawab
+  responsive: responsif
+  responsiveness: responsif
+  restart: mula semula
+  result: hasilnya
+  reviews: ulasan
+  reward: ganjaran
+  rewarding: memberi ganjaran
+  rewards: ganjaran
+  rich: kaya
+  roger: penyangak
+  roles: peranan
+  round based: berasaskan bulat
+  satisfying: memuaskan
+  saving: penjimatan
+  scandal: skandal
+  scenes: adegan
+  schedules: jadual
+  scores: skor
+  scripted: berskrip
+  secrets: rahsia
+  sections: seksyen
+  secure: selamat
+  security: keselamatan
+  segments: segmen
+  self reflection: pantulan diri
+  reflection: pantulan
+  reflections: pantulan
+  selling: menjual
+  sensitivity: kepekaan
+  sequences: jujukan
+  serious: serius
+  server: pelayan
+  sessions: sesi
+  setting: menetapkan
+  settings: tetapan
+  shine: bersinar
+  shooting: menembak
+  short: pendek
+  shortcut: pintasan
+  showcase: pameran
+  signature: tandatangan
+  significant: penting
+  simple: mudah
+  simplicity: kesederhanaan
+  simultaneous: serentak
+  situational: situasional
+  situations: situasi
+  skilled: mahir
+  skills: kemahiran
+  skip: langkau
+  slow: lambat
+  slowly: perlahan lahan
+  small: kecil
+  smart: pintar
+  smooth: licin
+  sneak: menyelinap
+  social: sosial
+  socialize: bersosial
+  software: perisian
+  solve: selesaikan
+  some: sesetengah
+  sometimes: kadang kadang
+  soundtrack: runut bunyi
+  sound track: runut bunyi
+  soundtracks: runut bunyi
+  sound tracks: runut bunyi
+  space: ruang
+  speaking: bercakap
+  specifications: spesifikasi
+  speechless: bersuara
+  spender: pembeli
+  split second: saat terpisah
+  spontaneous: spontan
+  sportsmanship: kesukanan
+  spot: tempat
+  square: persegi
+  stability: kestabilan
+  standard: piawai
+  staple: ruji
+  start: mulakan
+  stats: statistik
+  stay: tinggal
+  steady: mantap
+  stealth: senyap
+  stimulate: merangsang
+  stock: stok
+  stop: berhenti
+  storage: penyimpanan
+  stories: cerita
+  story driven: didorong cerita
+  storyline: jalan cerita
+  story line: jalan cerita
+  strategic: strategik
+  strategies: strategi
+  strategize: strategi
+  streamer: tali pinggang
+  strength: kekuatan
+  stress: tekanan
+  structure: struktur
+  stuck: tersangkut
+  study: belajar
+  stylish: bergaya
+  success: kejayaan
+  suggestions: cadangan
+  supernatural: ghaib
+  support: sokongan
+  supportive: menyokong
+  sure: pasti
+  surely: pasti
+  surprise: kejutan
+  surprises: kejutan
+  surrender: menyerahkan diri
+  surroundings: persekitaran
+  survive: bertahan hidup
+  switch: suis
+  switching: bertukar
+  symbol: simbol
+  synchronization: penyegerakan
+  systems: sistem
+  tactical: taktikal
+  tactics: taktik
+  take: ambil
+  talk: bercakap
+  task: tugas
+  teamwork: kerja berpasukan
+  tearing: merobek
+  technique: teknik
+  tedious: membosankan
+  temporary: sementara
+  tense: tegang
+  tension: ketegangan
+  term: terma
+  terrifying: menakutkan
+  than: daripada
+  that: itu
+  theme: tema
+  themes: tema
+  think: berfikir
+  thinking: berfikir
+  third person: orang ketiga
+  tight: ketat
+  timeless: tiada masa
+  timing: masa
+  tips: tip
+  too: juga
+  tool: alat
+  tough: sukar
+  tournaments: kejohanan
+  towards: ke arah
+  trading: perdagangan
+  traditional: tradisional
+  trailer: treler
+  training: latihan
+  transfer: pemindahan
+  tricky: sukar
+  turnaround: pusing
+  twist: putar
+  twitch: berkedut
+  two handed: dua tangan
+  unbalanced: tidak seimbang
+  unexpected: tidak dijangka
+  uninstall: nyahpasang
+  unique: unik
+  unlocked: membuka kunci
+  unpredictability: ketidaktentuan
+  unpredictable: tidak dapat diramalkan
+  unreliable: tidak boleh dipercayai
+  unstable: tidak stabil
+  unwind: berehatlah
+  update: kemas kini
+  updates: kemaskini
+  used: digunakan
+  user: pengguna
+  user friendly: mesra pengguna
+  utility: utiliti
+  valuable: berharga
+  valve: injap
+  variable: pembolehubah
+  variety: pelbagai
+  versatile: serba boleh
+  vertical: menegak
+  victory: kemenangan
+  violence: keganasan
+  vision: penglihatan
+  vital: penting
+  voice: suara
+  weak: lemah
+  weapon: senjata
+  weapons: senjata
+  weight: berat badan
+  well: baik
+  well designed: direka baik
+  what: apa
+  wider: lebih lebar
+  wins: menang
+  with: dengan
+  world building: bina dunia
+  worth: bernilai
+  year: tahun
+  zombie: zombi
+  zones: zon
+  zoom: zum
+
+santai:
+  url:
+    senarai_path: "https://gamersantai.com/senarai-game-remake-terbaik-yang-anda-boleh-mainkan-semasa-lapang/"
+    dragonball_path: "https://gamersantai.com/pubg-mobile-x-dragon-ball-super-akan-tiba-julai-2023-kamehameha/"
+    dragonball_1_path: "https://gamersantai.com/kolaborasi-pubg-mobile-dragon-ball-super-akan-datang-dalam-update-2-7/"
+    polis_path: "https://gamersantai.com/acara-kolaborasi-pubg-mobile-bersama-polis-evo-3-kini-berlangsung/"
+    fakta_path: "https://gamersantai.com/fakta-data-menarik-tentang-pubg-mobile-rekod-2018-hingga-2022/"
+    afghan_path: "https://gamersantai.com/taliban-haramkan-game-pubg-di-afghanistan-kerana-menggalakkan-keganasan/"
+
+  text:
+    senarai_path: "${paths.gaming_dir}/vocab/senarai.txt"
+    dragonball_path: "${paths.gaming_dir}/vocab/dragonball.txt"
+    dragonball_1_path: "${paths.gaming_dir}/vocab/dragonball_1.txt"
+    polis_path: "${paths.gaming_dir}/vocab/polis.txt"
+    fakta_path: "${paths.gaming_dir}/vocab/fakta.txt"
+    afghan_path: "${paths.gaming_dir}/vocab/afghan.txt"
+
+gamerwk:
+  url:
+    sega_path: "https://gamerwk.com/beli-rovio-sega-sebut-potensi-game-mobile-yakuza-atau-persona/"
+  
+  text:
+    sega_path: "${paths.gaming_dir}/vocab/sega.txt"

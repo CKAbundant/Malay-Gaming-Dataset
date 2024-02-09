@@ -1,0 +1,1092 @@
+phon_mapping:
+  battler: ˈbætəlɚ
+  downloadable: ˈdaʊnˌloʊddəbəl
+  frag: ˈfɹæk
+  freemium: ˈfɹimiəm
+  gank: ˈɡæŋk
+  gibs: ˈɡɪbz
+  gimp: ˈɡɪmp
+  git: ˈɡɪt
+  haah: ˈhɑɑ
+  influencer: ˈɪnfluənsɚ
+  judder: ˈdʒʌdɚ
+  laner: ˈleɪnɚ
+  metroidvania: ˈmɛtˌɹɔɪdˈvˈeɪniə
+  mods: ˈmɔdz
+  monetization: ˈmɑnəˌtəˈzeɪʃən
+  mudflation: ˈmʌdˈfleɪʃən
+  newb: ˈnoʊb
+  noob: ˈnoʊb
+  poggers: ˈpɑɡɡɚ
+  proc: ˈpɹɑk
+  sci fi: ˌsaɪˈfaɪ
+  scoped: ˈskoʊpt
+  squish: ˈskwɪʃ
+  telefrag: ˈtɛliˈfɹæk
+  transmogrification: ˈtɹænzˈmɑkˈɡɹiˈfiˈkæˌtaɪən
+  unlockable: ənˈlɑkkəbəl
+  unlocks: ənˈlɑks
+  whiffs: ˈwɪfs
+mapping:
+  1 up: one up
+  100%: hundred percent
+  16 bit: sixteen bit
+  1cc: One C C
+  1v1: one versus one
+  2.5d graphics: two point five dee graphics
+  2d graphics: two dee graphics
+  32 bit: thirty two bit
+  360 no scope: three sixty no scope
+  3d graphics: three dee graphics
+  4k resolution: four kay resolution
+  4x: four times
+  64 bit: sixty four bit
+  8 bit: eight bit
+  8k resolution: eight kay resolution
+  aaa: triple A
+  abandonware: abandon ware
+  ads: A dee ass
+  afk: A F kay
+  aggro: ag grow
+  ai: A eye
+  aimbot: aim bought
+  always on drm: always on dee R em
+  animatic: any matic
+  anti rpg: anti R pee gee
+  any%: any percent
+  aoe: A O E
+  ap: A pee
+  ar: A R
+  arena fps: arena F pee ass
+  arpg: action R pee gee
+  autoaim: auto aim
+  autorun: auto run
+  autosave: auto save
+  b hopping: bee hopping
+  b2p: bee to pee
+  bm: bad manners
+  borderless fullscreen windowed: border less full screen windowed
+  bot: bought
+  bullshot: bull shot
+  button mashing: button mash shing
+  cheesing: cheese sing
+  cheevo: chee vo
+  chiptune: chip tune
+  cms: C em ass
+  co op: cooperative game play
+  completionist: completion nist
+  control pt: control point
+  cooldown: cool down
+  corruptor: corrupt ter
+  cp: C pee
+  cpu: C pee you
+  cpu versus cpu: C pee you versus C pee you
+  cranking 90s: cranking nineties
+  crpg: C R pee gee
+  ct: counter terrorist
+  ctf: capture the flag
+  cutscene: cut scene
+  cybersport: cyber sport
+  d pad: dee pad
+  dbno: down but not out
+  deathmatch: death match
+  debuff: dee buff
+  demake: dee make
+  destructible: destructable
+  dlc: dee el C
+  dpm: damage per minute
+  dps: dee pee ass
+  drm: digital right management
+  dummied out: dum mi out
+  duping: dupe ping
+  elo hell: E low hell
+  emulator: E mule later
+  esp cheats: E ass pee cheats
+  esports: E sports
+  exp: experience point
+  f2p: F to pee
+  fangame: fan game
+  fc: full combo
+  ff: forfeit
+  fomo: fo mo
+  foozle: foo ze
+  fotm: flavor of the month
+  fov: F O vee
+  fps: F pee ass
+  ftp: F to pee
+  gaas: games as a service
+  gamethrowing: game throwing
+  gddr: gee dee dee R
+  gg: good game
+  ggwp: gee gee W pee
+  git gud: git good
+  glhf: good luck have fun
+  goty: game of the year
+  gpu: gee pee you
+  griefer: grief fur
+  hack vs hack: hack versus hack
+  handheld: hand held
+  headshot: head shot
+  hitbox: hit box
+  hitscan: hit scan
+  hopa: hold par
+  hp: H pee
+  hurtbox: hurt box
+  iap: in app purchase
+  iframes: eye frames
+  indie game: in dee game
+  integrated i/o: integrated I O
+  jrpg: jay R pee gee
+  kd ratio: kay dee ratio
+  kda: kay dee A
+  kdr: kay dee R
+  koth: king of the hill
+  leaderboard: leader board
+  lfg: looking for group
+  lfm: looking for more
+  lifesteal: life steal
+  loadout: load out
+  longplay: long play
+  low%: low percent
+  lp: lets play
+  masocore: may so call
+  match 3 game: match three game
+  match3 game: match three game
+  metagame: meta game
+  metastory: meta story
+  microtransaction: micro transaction
+  min maxing: mean maxing
+  miniboss: mini boss
+  minigame: mini game
+  minimap: mini map
+  mmo: em em O
+  mmorpg: em em O R pee gee
+  mmr: em em R
+  moba: mole bar
+  mouselook: mouse look
+  mouseplay: mouse play
+  mp: em pee
+  multiplatform: multi platform
+  nades: neates
+  nerf: nerve
+  nerfing: nerve fin
+  new game +: new game plus
+  ng +: new game plus
+  ng+: new game plus
+  noclip mode: no clip mode
+  npc: and pee C
+  nt: nice try
+  ohk: O H kay
+  on disc dlc: on disc D el C
+  op: O pee
+  otp: one trick pony
+  overwatch: over watch
+  overworld: over world
+  p rank: perfect rank
+  paywall: pay wall
+  pc: pee C
+  pentakill: penta kill
+  permadeath: perma death
+  platting: play ting
+  playtesting: play testing
+  playthrough: play through
+  postgame: post game
+  psw: persistent state world
+  pt: playable teaser
+  pulc: premium unlockable content
+  pve: pee vee E
+  pvp: pee vee pee
+  pwn: pond
+  pwned: pond
+  qa: queue A
+  qol: quality of life
+  qq: queue queue
+  qte: quick time event
+  quicksave: quick save
+  quickscoping: quick scoping
+  ragdoll: rag doll
+  ragedoll: rage doll
+  ragequit: rage quit
+  rdm: random death match
+  real time corruptor: real time corrupt ter
+  remaster: re master
+  remorting: re mort ting
+  respawn: re spawn
+  respeccing: re spec king
+  respecing: re spec king
+  retrogaming: retro gaming
+  rez: res
+  rng: R and gee
+  rngesus: R and jesus
+  roguelike: rogue like
+  roguelite: rogue light
+  rp: R pee
+  rpg: R pee gee
+  rts: R tea ass
+  save scumming: save scum ming
+  shmup: shoot them up
+  shoot em up: shoot them up
+  shovelware: shovel ware
+  simcade: sim cade
+  sistering: sister ring
+  smp: survival multi player
+  softlock: soft lock
+  soulsborne: souls borne
+  soulslike: souls like
+  spamming: spam ming
+  speedrun: speed run
+  speedrunning: speed running
+  ssd: ass ass dee
+  subgame: sub game
+  superboss: super boss
+  teabagging: tea bagging
+  team deathmatch: team death match
+  teamkill: team kill
+  telegraphing: telegraph fin
+  theorycraft: theory craft
+  thumbstick: thumb stick
+  touchscreen: touch screen
+  tp: tea pee
+  transmog: trans mock
+  trickjump: trick jump
+  tryhard: try hard
+  turtling: turtle ling
+  twinking: twin king
+  vac: vee A C
+  vaporware: vapor ware
+  vdm: vehicle death match
+  vr: vee R
+  vrr: variable refresh rate
+  waggle: wag girl
+  waifu: wai fu
+  walkthrough: walk through
+  wallbang: wall bang
+  wallhack: wall hack
+  wasd keys: w a s d keys
+  wp: W pee
+  xp: experience point
+  zerging: ze ging
+edge_mapping:
+  DoT: dee o tea
+  HoT: H o tea
+  t-pose: tea pos
+  T-pose: tea pos
+custom_mapping:
+  2.5D: two point five dee
+  2D: two dee
+  3D: three dee
+  4K: four kay
+  8K: eight kay
+  geocaching: geo caching
+  modding: mod ding
+  mvp: em vee pee
+  parkour: park call
+  platformer: platform mer
+  platformers: platform mers
+  pokemon: poke ki mon
+  scrolling: scroll ling
+  scumming: scum ming
+  tps: tee pee ass
+  tump: thump
+  wasd: w a s d
+  xbox: axe box
+translated_mapping:
+  abilities: kebolehan
+  ability: kebolehan
+  abrupt: tiba tiba
+  accessibility: aksesibiliti
+  accessible: boleh diakses
+  accomplished: dicapai
+  accomplishment: pencapaian
+  accountable: bertanggungjawab
+  actions: tindakan
+  activate: aktifkan
+  active: aktif
+  adaptability: kebolehsuaian
+  adaptation: adaptasi
+  addicted: ketagihan
+  addicting: ketagihan
+  addictive: ketagihan
+  additional: tambahan
+  address: alamat
+  adjust: melaraskan
+  adjustment: pelarasan
+  admit: mengaku
+  advanced: maju
+  advancement: kemajuan
+  advantage: kelebihannya
+  aesthetic: estetik
+  affected: terjejas
+  after: selepas
+  aggressive: agresif
+  agreed: bersetuju
+  alert: amaran
+  alienate: mengasingkan diri
+  allocation: peruntukan
+  alternative: alternatif
+  amazement: kagum
+  ambush: serangan hendap
+  annoying: menjengkelkan
+  appreciated: dihargai
+  approaches: pendekatan
+  areas: kawasan
+  artbook: buku seni
+  aspect: aspek
+  atmosphere: atmosfera
+  attacks: serangan
+  attention: perhatian
+  audience: penonton
+  auto targeting: penyasaran sendiri
+  available: boleh didapati
+  avoid: elakkan
+  awareness: kesedaran
+  balanced: seimbang
+  banter: kelakar
+  battles: pertempuran
+  benefits: manfaat
+  better: lebih baik
+  between: antara
+  big: besar
+  blame: menyalahkan
+  bosses: bos
+  bounce: lantunan
+  brainstorm: sumbang saran
+  branches: cabang
+  breaches: pelanggaran
+  breaks: pecah
+  bring: bawa
+  bugs: pepijat
+  build: membina
+  builds: binaan
+  calm: tenang
+  carefully: teliti
+  cast: pelakon
+  casualties: korban
+  catchy: menarik
+  cautious: berhati hati
+  ceiling: siling
+  celebrate: raikan
+  center: pusat
+  certain: tertentu
+  chair: kerusi
+  challenges: cabaran
+  challenging: mencabar
+  chance: peluang
+  chances: peluang
+  characters: aksara
+  charm: pesona
+  chat: sembang
+  chill: sejuk
+  choices: pilihan
+  clear: jelas
+  clever: pandai
+  codes: kod
+  collect: kumpulkan
+  collection: koleksi
+  collectors: pengumpul
+  combat: pertempuran
+  come: datang
+  comedic: komedik
+  comfort: keselesaan
+  communication: komunikasi
+  communities: komuniti
+  community: komuniti
+  companion: sahabat
+  compared: dibandingkan
+  compatible: serasi
+  compete: bersaing
+  competition: persaingan
+  competitiveness: daya saing
+  composition: komposisi
+  compromised: dikompromikan
+  concerns: kebimbangan
+  confident: yakin
+  confuse: mengelirukan
+  connect: sambungkan
+  connected: disambungkan
+  connection: sambungan
+  consequences: akibatnya
+  consistent: konsisten
+  context: konteks
+  continuous: berterusan
+  controlled: terkawal
+  controllers: pengawal
+  convenience: kemudahan
+  coordinate: koordinat
+  coordination: penyelarasan
+  corner: bucu
+  cosmetics: kosmetik
+  crash: kemalangan
+  create: buat
+  creation: ciptaan
+  creative: kreatif
+  creativity: kreativiti
+  criticism: kritikan
+  crowded: sesak
+  crucial: penting
+  culture: budaya
+  currency: mata wang
+  current: semasa
+  custom: adat
+  customization: penyesuaian
+  dark: gelap
+  days: hari
+  debate: perbahasan
+  debugging: penyahpepijatan
+  decide: membuat keputusan
+  decision: keputusan
+  decision making: membuat keputusan
+  decisions: keputusan
+  dedicated: khusus
+  dedication: dedikasi
+  deep: mendalam
+  deeper: lebih dalam
+  defeat: kekalahan
+  defense: pertahanan
+  define: mentakrifkan
+  demand: permintaan
+  depth: kedalaman
+  describe: terangkan
+  desirable: wajar
+  desk: meja
+  destroy: memusnahkan
+  destroyer: pemusnah
+  detail: terperinci
+  details: perincian
+  developers: pembangun
+  device: peranti
+  different: berbeza
+  disapproval: penolakan
+  discover: temui
+  discovery: penemuan
+  discuss: berbincang
+  discussion: perbincangan
+  discussions: perbincangan
+  distant: jauh
+  distinct: berbeza
+  distribute: mengedarkan
+  distribution: pengedaran
+  distrust: kesangsian
+  dominate: menguasai
+  dream: mimpi
+  drive: memandu
+  dynamics: dinamik
+  easy: mudah
+  economy: ekonomi
+  edge: hujung
+  edition: edisi
+  effective: berkesan
+  efficient: cekap
+  effort: usaha
+  eggs: telur
+  elements: elemens
+  eliminate: menghapuskan
+  emotional: emosi
+  encounters: pertemuan
+  encourage: galakkan
+  encouragement: galakan
+  engage: terlibat
+  engaged: terlibat
+  engagement: pertunangan
+  engaging: menarik
+  engrossing: mengasyikkan
+  enhance: meningkatkan
+  enhancements: penambahan
+  enjoy: nikmati
+  enjoyability: keseronokan
+  enjoyable: menyeronokkan
+  ensure: pastikan
+  enthusiasm: semangat
+  epic: epik
+  equipment: peralatan
+  especially: terutamanya
+  ethical: etika
+  ethics: etika
+  events: peristiwa
+  everyone: semua orang
+  evolve: berkembang
+  exceptional: luar biasa
+  exceptionally: luar biasa
+  excited: teruja
+  excitement: keseronokan
+  exciting: menarik
+  execution: pelaksanaan
+  expansions: pengembangan
+  experienced: berpengalaman
+  experiences: pengalaman
+  experiment: eksperimen
+  expert: pakar
+  exploration: penerokaan
+  explore: meneroka
+  expo: ekspo
+  expression: ungkapan
+  extraordinary: luar biasa
+  factor: faktor
+  fail: gagal
+  familiar: biasa
+  fans: peminat
+  feature: ciri
+  features: fitur
+  feeling: perasaan
+  fight: melawan
+  fighting: berjuang
+  fights: pergaduhan
+  file: fail
+  financial: kewangan
+  fire: api
+  firepower: kuasa tembakan
+  fixes: pembaikan
+  flexibility: fleksibiliti
+  flow: aliran
+  follow: ikuti
+  followed: diikuti
+  forward: ke hadapan
+  franchise: francais
+  franchises: francais
+  frequent: kerap
+  frequently: kerap
+  friendly: mesra
+  friends: kawan
+  friendships: persahabatan
+  frustrating: mengecewakan
+  frustration: kekecewaan
+  functionality: fungsi
+  gain: keuntungan
+  game breaking: pemecahan permainan
+  game changer: penukar permainan
+  gap: jurang
+  gathering: pengumpulan
+  generator: penjana
+  gesture based: berasaskan gerak isyarat
+  girlfriend: teman wanita
+  goal: matlamat
+  grace: rahmat
+  gradual: bertahap
+  grafik intensive: intensif grafik
+  graphical: grafik
+  greatest: terhebat
+  groups: kumpulan
+  guild: gilda
+  had: telah
+  handle: pemegang
+  handy: berguna
+  hang: gantung
+  happy: gembira
+  hardware: perkakasan
+  headset: alat dengar
+  heavy: berat
+  help: membantu
+  hero: wira
+  highlight: sorot
+  highlights: sorotan
+  history: sejarah
+  holder: pemegang
+  honor: penghormatan
+  horizontal: mendatar
+  horror: seram
+  horse: kuda
+  humiliation: penghinaan
+  icon: ikon
+  iconic: ikonik
+  identify: mengenal pasti
+  illusion: ilusi
+  imaginary: khayalan
+  imbalanced: tidak seimbang
+  immediate: segera
+  immerse: tenggelam
+  immersed: terbenam
+  immersion: perendaman
+  impact: impak
+  impactful: memberi impak
+  implement: laksana
+  important: penting
+  impression: kesan
+  impressive: mengagumkan
+  improve: memperbaiki
+  improvement: penambahbaikan
+  improvements: penambahbaikan
+  impulsivity: impulsif
+  incentive: insentif
+  increase: meningkat
+  incredible: luar biasa
+  industry: industri
+  inevitable: tidak dapat dielakkan
+  informal: tidak rasmi
+  insertion: penyisipan
+  inside: dalam
+  install: memasang
+  insurance: insurans
+  integral: kamiran
+  integration: integrasi
+  intense: tegang
+  intensity: keamatan
+  interactions: interaksi
+  interactive: interaktif
+  interesting: menarik
+  into: ke dalam
+  introduction: pengenalan
+  intuition: intuisi
+  investment: pelaburan
+  involve: melibatkan diri
+  involved: terbabit
+  irreversible: tidak dapat dipulihkan
+  issues: isu
+  items: item
+  its: itu
+  japanese: jepun
+  jaw dropping: pengosongan rahang
+  job: kerja
+  join: menyertai
+  jokes: jenaka
+  journey: perjalanan
+  jumps: lompat
+  keep: teruskan
+  kills: bunuh
+  large: besar
+  large scale: skala besar
+  lasting: berpanjangan
+  latest: terkini
+  layout: susun atur
+  lazy: malas
+  learn: belajar
+  leave: cuti
+  left: ditinggalkan
+  legacy: warisan
+  leveling: meratakan
+  levels: aras
+  lighting: pencahayaan
+  limit: had
+  limited: terhad
+  limits: had
+  loading: memuatkan
+  location: lokasi
+  locations: lokasi
+  losing: kehilangan
+  lower level: aras bawah
+  maintain: mengekalkan
+  major: utama
+  mantra: mantera
+  marketing: pemasaran
+  matches: padanan
+  maybe: mungkin
+  meaningful: bermakna
+  mechanism: mekanisme
+  medium: sederhana
+  meet: jumpa
+  memorable: tidak dapat dilupakan
+  memory: ingatan
+  merchandise: barang dagangan
+  mice: tikus
+  microtransactions: transaksi mikro
+  middle: tengah
+  mind: fikiran
+  mistakes: kesilapan
+  mobile: mudah alih
+  mobility: mobiliti
+  modern: moden
+  modes: mod
+  modify: ubah suai
+  moment: momen
+  moments: momen
+  monitor: memantau
+  morally: secara moral
+  motivation: motivasi
+  motto: moto
+  movement: pergerakan
+  moves: bergerak
+  movie: filem
+  multi user: pengguna berbilang
+  mysterious: misteri
+  narrative: naratif
+  narratives: naratif
+  next: seterusnya
+  nights: malam
+  noise: bunyi bising
+  nostalgic: nostalgia
+  now: sekarang
+  number: nombor
+  objectives: objektif
+  obstacles: halangan
+  obvious: jelas
+  official: rasmi
+  on the go: semasa dalam perjalanan
+  opportunities: peluang
+  opportunity: peluang
+  optimal: optimum
+  optimize: mengoptimumkan
+  optimized: dioptimumkan
+  option: pilihan
+  original: asal
+  outcome: hasilnya
+  outcomes: hasil
+  outdoor: luar
+  overall: keseluruhannya
+  overcome: diatasi
+  overwhelming: sangat menggembirakan
+  panic: panik
+  partnerships: perkongsian
+  parts: bahagian
+  passes: hantaran
+  path: jalan
+  peek: mengintip
+  perform: melaksanakan
+  performance: prestasi
+  personalization: peribadi
+  personalize: personaliti
+  perspective: perspektif
+  physically: secara fizikal
+  pink colored: berwarna merah jambu
+  pitch: padang
+  place: tempat
+  plan: pelan
+  planning: perancangan
+  platforms: platform
+  play style: gaya permainan
+  play styles: gaya permainan
+  played: dimainkan
+  player driven: pemain didorong
+  players: pemain
+  plays: dimainkan
+  playstyle: gaya permainan
+  playstyles: gaya permainan
+  porting: mengalih
+  positioning: penentududukan
+  possibilities: kemungkinan
+  powerful: kuat
+  powerhouse: rumah kuasa
+  practice: amalan
+  precise: tepat
+  precision: ketepatan
+  predictable: boleh diramal
+  prefer: lebih suka
+  preference: pilihan
+  presses: tekan
+  prevent: mengelakkan
+  problem solving: penyelesaian masalah
+  proceed: meneruskan
+  process: proses
+  processes: proses
+  processing: memproses
+  progressions: kemajuan
+  propel: sifat
+  pumping: mengepam
+  punishment: hukuman
+  purchases: pembelian
+  purpose: tujuan
+  push: tolak
+  puzzles: teka teki
+  quests: pencarian
+  rapid: pantas
+  rare: jarang berlaku
+  reaction: reaksi
+  reactions: tindak balas
+  read: baca
+  ready: sedia
+  real world: dunia nyata
+  realism: realisme
+  reallocation: perundingan semula
+  realm: alam
+  reason: sebab
+  recommend: mengesyorkan
+  recreate: buat semula
+  reduce: mengurangkan
+  refer: rujuk
+  refine: menyempurnakan
+  reflection: pantulan
+  reflections: pantulan
+  reflexes: refleks
+  refreshing: menyegarkan
+  regretted: dikesali
+  relax: santai
+  relaxing: santai
+  released: dilepaskan
+  relief: pelepasan
+  reminder: peringatan
+  rendering: penerapan
+  replayable: boleh ganti
+  report: laporan
+  reports: laporan
+  reputation: reputasi
+  require: memerlukan
+  required: diperlukan
+  requires: memerlukan
+  resilience: daya tahan
+  resolve: lerai
+  resource: sumber
+  respected: dihormati
+  response: tindak balas
+  responsibility: tanggungjawab
+  responsive: responsif
+  responsiveness: responsif
+  restart: mula semula
+  result: hasilnya
+  reviews: ulasan
+  reward: ganjaran
+  rewarding: memberi ganjaran
+  rewards: ganjaran
+  rich: kaya
+  roger: penyangak
+  roles: peranan
+  round based: berasaskan bulat
+  satisfying: memuaskan
+  saving: penjimatan
+  scandal: skandal
+  scenes: adegan
+  schedules: jadual
+  scores: skor
+  scripted: berskrip
+  secrets: rahsia
+  sections: seksyen
+  secure: selamat
+  security: keselamatan
+  segments: segmen
+  self reflection: pantulan diri
+  selling: menjual
+  sensitivity: kepekaan
+  sequences: jujukan
+  serious: serius
+  server: pelayan
+  sessions: sesi
+  setting: menetapkan
+  settings: tetapan
+  shine: bersinar
+  shooting: menembak
+  short: pendek
+  shortcut: pintasan
+  showcase: pameran
+  signature: tandatangan
+  significant: penting
+  simple: mudah
+  simplicity: kesederhanaan
+  simultaneous: serentak
+  situational: situasional
+  situations: situasi
+  skilled: mahir
+  skills: kemahiran
+  skip: langkau
+  slow: lambat
+  slowly: perlahan lahan
+  small: kecil
+  smart: pintar
+  smooth: licin
+  sneak: menyelinap
+  social: sosial
+  socialize: bersosial
+  software: perisian
+  solve: selesaikan
+  some: sesetengah
+  sometimes: kadang kadang
+  sound track: runut bunyi
+  sound tracks: runut bunyi
+  soundtrack: runut bunyi
+  soundtracks: runut bunyi
+  space: ruang
+  speaking: bercakap
+  specifications: spesifikasi
+  speechless: bersuara
+  spender: pembeli
+  split second: saat terpisah
+  spontaneous: spontan
+  sportsmanship: kesukanan
+  spot: tempat
+  square: persegi
+  stability: kestabilan
+  standard: piawai
+  staple: ruji
+  start: mulakan
+  stats: statistik
+  stay: tinggal
+  steady: mantap
+  stealth: senyap
+  stimulate: merangsang
+  stock: stok
+  stop: berhenti
+  storage: penyimpanan
+  stories: cerita
+  story driven: didorong cerita
+  story line: jalan cerita
+  storyline: jalan cerita
+  strategic: strategik
+  strategies: strategi
+  strategize: strategi
+  streamer: tali pinggang
+  strength: kekuatan
+  stress: tekanan
+  structure: struktur
+  stuck: tersangkut
+  study: belajar
+  stylish: bergaya
+  success: kejayaan
+  suggestions: cadangan
+  supernatural: ghaib
+  support: sokongan
+  supportive: menyokong
+  sure: pasti
+  surely: pasti
+  surprise: kejutan
+  surprises: kejutan
+  surrender: menyerahkan diri
+  surroundings: persekitaran
+  survive: bertahan hidup
+  switch: suis
+  switching: bertukar
+  symbol: simbol
+  synchronization: penyegerakan
+  systems: sistem
+  tactical: taktikal
+  tactics: taktik
+  take: ambil
+  talk: bercakap
+  task: tugas
+  teamwork: kerja berpasukan
+  tearing: merobek
+  technique: teknik
+  tedious: membosankan
+  temporary: sementara
+  tense: tegang
+  tension: ketegangan
+  term: terma
+  terrifying: menakutkan
+  than: daripada
+  that: itu
+  theme: tema
+  themes: tema
+  think: berfikir
+  thinking: berfikir
+  tight: ketat
+  timeless: tiada masa
+  timing: masa
+  tips: tip
+  too: juga
+  tool: alat
+  tough: sukar
+  tournaments: kejohanan
+  towards: ke arah
+  trading: perdagangan
+  traditional: tradisional
+  trailer: treler
+  training: latihan
+  transfer: pemindahan
+  tricky: sukar
+  turnaround: pusing
+  twist: putar
+  twitch: berkedut
+  two handed: dua tangan
+  unbalanced: tidak seimbang
+  unexpected: tidak dijangka
+  uninstall: nyahpasang
+  unique: unik
+  unlocked: membuka kunci
+  unpredictability: ketidaktentuan
+  unpredictable: tidak dapat diramalkan
+  unreliable: tidak boleh dipercayai
+  unstable: tidak stabil
+  unwind: berehatlah
+  update: kemas kini
+  updates: kemaskini
+  used: digunakan
+  user: pengguna
+  user friendly: mesra pengguna
+  utility: utiliti
+  valuable: berharga
+  valve: injap
+  variety: pelbagai
+  versatile: serba boleh
+  vertical: menegak
+  victory: kemenangan
+  violence: keganasan
+  vision: penglihatan
+  vital: penting
+  voice: suara
+  weak: lemah
+  weapon: senjata
+  weapons: senjata
+  weight: berat badan
+  well: baik
+  well designed: direka baik
+  what: apa
+  wider: lebih lebar
+  wins: menang
+  with: dengan
+  world building: bina dunia
+  worth: bernilai
+  zombie: zombi
+  zones: zon
+  zoom: zum
+phon_malay:
+- a
+- ada
+- adalah
+- agar
+- ajar
+- alam
+- aman
+- antar
+- baca
+- bang
+- beli
+- berjaya
+- bila
+- bos
+- cara
+- cuba
+- dah
+- dan
+- daya
+- di
+- dia
+- fantastik
+- gila
+- hari
+- ia
+- ikon
+- industri
+- isu
+- jaya
+- je
+- kadar
+- kan
+- kasi
+- kat
+- kaya
+- ke
+- kempen
+- kira
+- kita
+- kot
+- kredit
+- la
+- lain
+- lama
+- lupa
+- mahal
+- mana
+- masa
+- mata
+- maya
+- minda
+- minit
+- mula
+- muzik
+- naik
+- ni
+- okey
+- performa
+- peta
+- pintar
+- polis
+- ronda
+- saling
+- sama
+- sana
+- servis
+- siri
+- tac
+- tak
+- tanya
+- tim
+- tu
+- wang
+- yang
+- zaman
+- zona

@@ -1,0 +1,112 @@
+repo_dir: "/home/ckabundant/Documents/tts-melayu"
+folder_name: "ms_en_n"
+file_name: "output_${folder_name}"
+# repo_dir: "/polyaxon-v1-data/workspaces"
+
+path:
+  # Ground truth wav files
+  gt_dir: "${repo_dir}/data/gaming/malaya_vits_n"
+
+  # Ground truth mel and mfcc
+  # gt_mel_dir: "${repo_dir}/data/metadata/mel"
+  # gt_mfcc_dir: "${repo_dir}/data/metadata/mfcc"
+  gt_wav_dir: "${path.gt_dir}/wav"
+  gt_mel_dir: "${path.gt_dir}/mel"
+  gt_mfcc_dir: "${path.gt_dir}/mfcc"
+
+  # Synthesized speech
+  syn_path: "${repo_dir}/data/gaming/${folder_name}"
+  syn_wav_path: "${path.syn_path}/wav"
+  syn_mel_dir: "${path.syn_path}/mel"
+  syn_mfcc_dir: "${path.syn_path}/mfcc"
+
+  # csv file paths
+  metadata_path: "${repo_dir}/data/metadata/metadata.csv"
+  combined_path: "${repo_dir}/data/gaming/dataframe/combined_gaming_terms.csv"
+  gt_basic_path: "${path.gt_dir}/gaming_gt.csv"
+  test_csv_path: "${path.syn_path}/${file_name}.csv"
+  test_mfcc_path: "${path.syn_path}/dataframe/${file_name}_mfcc.csv"
+  test_acr_path: "${path.syn_path}/dataframe/${file_name}_acr.csv"
+  test_mcd_path: "${path.syn_path}/dataframe/${file_name}_mcd.csv"
+  test_asr_path: "${path.syn_path}/dataframe/${file_name}_asr.csv"
+  test_wer_cer_path: "${path.syn_path}/dataframe/${file_name}_wer_cer.csv"
+  test_complete_path: "${path.syn_path}/${file_name}_complete.csv"
+
+mel_mfcc:
+  # Mel & MFCC parameters
+  sampling_rate: 22050
+  n_fft: 1024
+  hop_length: 256
+  win_length: 1024
+  window: "hann"
+  power: 2.0
+  n_mels: 80
+  n_mfcc: 20
+  dct_type: 2
+  norm_mfcc: "ortho"
+  lifter: 0
+
+general:
+  # Pandarallel
+  nb_workers: 6
+  progress_bar: true
+
+graph:
+  # Histogram
+  col_list:
+    - "num_words"
+    - "audio_duration"
+    - "syn_acr"
+    - "mcd"
+    - "syn_wer"
+    - "syn_cer"
+  num_row: 2
+  num_col: 3
+  figsize:
+    - 15
+    - 8
+  alpha: 0.6
+  edgecolor: "none"
+  kde: true
+  font_size: 16
+  rect:
+    - 0
+    - 0
+    - 1
+    - 0.999
+
+  # Boxplot
+  orient: "h"
+  palette: "Set3"
+  width: 0.5
+
+  # gt vs syn
+  f_dict:
+    "acr":
+      - "gt_acr"
+      - "syn_acr"
+    "wer":
+      - "gt_wer"
+      - "syn_wer"
+    "cer":
+      - "gt_cer"
+      - "syn_cer"
+
+plotly:
+  color_feature: "audio_duration"
+  custom_data:
+    - "syn_wav_path"
+    - "id"
+    - "text"
+    - "audio_duration"
+    - "syn_acr"
+    - "mcd"
+    - "syn_wer"
+    - "syn_cer"
+  hover_data:
+    - "id"
+    - "text"
+  click_mode: "event+select"
+  marker_size: 10
+  color: "white"
+

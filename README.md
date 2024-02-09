@@ -14,3 +14,5 @@ Note that:
 
 1. Set up instructions and the required python modules are provided within the jupyter notebooks. Please use python version of at least 3.10.
 2. We attempt to generate proper sound by modifying word (e.g. 'purchase' -> 'per chease') on a best effort basis. As such, the sound may not be ideal for some gaming terms.
+3. We will recommended users to use the above notebooks in sequence i.e. `gaming_terms.ipynb`, followed by `gaming_gpt.ipynb` and `gaming_gpt_phon.ipynb`. However, user can jump straight to `gaming_gpt.ipynb` to generate synthetic gaming dataset using `gaming.yaml` yaml file provided under `src_gaming` folder.
+
